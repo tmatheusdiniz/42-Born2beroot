@@ -81,7 +81,6 @@ void	ft_putnbr_fd(int n, int fd);
 
 //Utils_bits
 int	ft_count_bits(long long number);
-int	*ft_trunc_bits(int *number);
 
 //Bonus
 

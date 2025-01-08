@@ -31,10 +31,11 @@ int	ft_atoi(const char *nptr)
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 		res = res * 10 + nptr[i++] - '0';
-	res &= 0xFFFFFFFF;
+	if (ft_count_bits(res) > 32)
+		res &= 0xFFFFFFFF;
 	return (res * sign);
 }
-/*
+
 int	ft_count_bits(long long number)
 {
 	int	count;
@@ -49,15 +50,3 @@ int	ft_count_bits(long long number)
 	}
 	return (count);
 }
-*/
-/*
-int	ft_trunc_bits(int *number)
-{
-	int	value;
-
-	value = 32;
-	while (value-- > 0)
-		number ++ ;
-	return (number);
-}
-*/

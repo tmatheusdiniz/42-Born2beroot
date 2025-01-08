@@ -25,4 +25,20 @@ int	main(void)
 	ft_printf("FT -> %i\n", test);
 	test = atoi("-21474836488100");
 	ft_printf("OG -> %i\n", test);
+	test = ft_atoi("2147483648");
+	ft_printf("FT -> %i\n", test);
+	test = atoi("2147483648");
+	ft_printf("OG -> %i\n", test);
+	test = ft_atoi("2147483647");
+	ft_printf("FT -> %i\n", test);
+	test = atoi("2147483647");
+	ft_printf("OG -> %i\n", test);
+	test = ft_atoi("0");
+	ft_printf("FT -> %i\n", test);
+	test = atoi("0");
+	ft_printf("OG -> %i\n", test);
+	test = ft_atoi("-2147483649");
+	ft_printf("FT -> %i\n", test);
+	test = atoi("-2147483649");
+	ft_printf("OG -> %i\n", test);
 }
